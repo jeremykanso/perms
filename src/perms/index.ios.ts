@@ -361,7 +361,7 @@ export namespace PermissionsIOS {
                     }
                     activityManager.queryActivityStartingFromDateToDateToQueueWithHandler(NSDate.distantPast, new Date(), motionActivityQueue, (activities, error) => {
                         if (error) {
-                            reject(error);
+                         //   reject(error);
                         }
                         if (Trace.isEnabled()) {
                             CLog(CLogTypes.info, 'NSPMotion got response', activities, error, status, getStatus());
